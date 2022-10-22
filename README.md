@@ -3,6 +3,7 @@
 This is a sample example project written in Typescript to run AWS SQS with Serverless Offline
 
 ## Setup
+First, you will need to install Node 16+ and Docker in your OS before starting.
 
 Run this command to initialize a new project in a new working directory.
 
@@ -14,7 +15,7 @@ npm install
 
 **Start and Run the Project Offline**
 
-First you need to install docker in your OS. After installation, run the following commands in two cmd.
+Run the following commands in two cmd.
 
 ```
 npm run start-elastic-mq
