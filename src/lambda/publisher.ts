@@ -10,7 +10,7 @@ export const handlePublish = async (event: APIGatewayEvent): Promise<ProxyResult
   if (!sqsQueueUrl) {
     return {
       statusCode: 404,
-      body: JSON.stringify('Queue not found'),
+      body: 'Queue not found',
     };
   }
 
@@ -42,12 +42,12 @@ export const handlePublish = async (event: APIGatewayEvent): Promise<ProxyResult
     console.error('Error:', error);
     return {
       statusCode: 500,
-      body: JSON.stringify({ message: 'Error publishing message to SQS' }),
+      body: 'Error publishing message to SQS',
     };
   }
 
   return {
     statusCode: 200,
-    body: JSON.stringify('Published message to SQS queue'),
+    body: 'Published message to SQS queue',
   };
 };
