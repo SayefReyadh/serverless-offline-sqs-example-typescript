@@ -1,5 +1,4 @@
 import { APIGatewayEvent } from 'aws-lambda';
-import SQS from 'aws-sdk/clients/sqs';
 
 export const isLocalHost = (event: APIGatewayEvent): boolean => {
   const isLocalHost = event.headers?.host?.includes('localhost');
